@@ -1,0 +1,21 @@
+---
+# tasks file for test-ansible-role
+- name: deploy application task
+  include_tasks: deploy.yml
+  when: task == "deploy"
+
+- name: restart application task
+  include_tasks: restart.yml
+  when: task == "restart"
+
+- name: backup application task
+  include_tasks: backup.yml
+  when: task == "backup"
+  
+- name: start application task
+  include_tasks: start.yml
+  when: task == "start"
+  
+- name: stop application task
+  include_tasks: stop.yml
+  when: task == "stop"

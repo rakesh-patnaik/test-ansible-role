@@ -1,0 +1,8 @@
+---
+# vars file for test-ansible-role
+content: "content1 value"
+
+contents:
+  - "value1"
+  - "value2"
+  - "value3"
